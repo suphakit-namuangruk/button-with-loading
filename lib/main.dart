@@ -19,23 +19,16 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
 class MyStatefulWidget extends StatefulWidget {
   const MyStatefulWidget({Key? key}) : super(key: key);
 
   @override
   State<MyStatefulWidget> createState() => _MyStatefulWidgetState();
 }
-
-ButtonState state = ButtonState.init;
-
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
-  TextEditingController nameController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
 
   //กำหนดเป็นFalseก่อนกด
   bool isLoadng = false;
-
 
   @override
   Widget build(BuildContext context) {
